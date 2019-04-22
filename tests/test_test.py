@@ -15,6 +15,9 @@ class TestTest(unittest.TestCase):
         expected = "    lala lili loulou"
         self.assertSequenceEqual(result, expected)
 
+    def test_lala(self):
+        self.assertSequenceEqual(add_spaces('love', 1), ' love')
+
 
 if __name__ == "__main__":
     unittest.main()
