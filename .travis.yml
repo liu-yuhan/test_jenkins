@@ -1,0 +1,8 @@
+language: python
+
+env:
+  - PYTHONPATH=$TRAVIS_BUILD_DIR/trucs
+
+jobs:
+  include:
+    - script: python -m unittest discover ./tests
